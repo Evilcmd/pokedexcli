@@ -65,7 +65,6 @@ func startRepl(cfg *config) {
 		args := ""
 		if len(cleaned) > 1 {
 			args = cleaned[1]
-			fmt.Println(args)
 		}
 		err := command.callback(cfg, args)
 		if err != nil {

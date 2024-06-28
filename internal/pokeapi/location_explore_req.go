@@ -9,6 +9,10 @@ import (
 
 func (c *Client) ListPokemonsInArea(location string) ([]string, error) {
 
+	if len(location) == 0 {
+		return []string{}, fmt.Errorf("location not entered")
+	}
+
 	endpoint := "/location-area/"
 	fullurl := BaseUrl + endpoint + location
 
