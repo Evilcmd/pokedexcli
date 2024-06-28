@@ -1,6 +1,6 @@
 package main
 
-import "github.com/Evilcmd/pokedexclifollow/internal/pokeapi"
+import "github.com/Evilcmd/pokedexcli/internal/pokeapi"
 
 // holds stateful information
 type config struct {

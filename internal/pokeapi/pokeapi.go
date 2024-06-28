@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/Evilcmd/pokedexclifollow/internal/pokecache"
+	"github.com/Evilcmd/pokedexcli/internal/pokecache"
 )
 
 const BaseUrl = "https://pokeapi.co/api/v2"
