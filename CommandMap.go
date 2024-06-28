@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func mapCommand(cfg *config) error {
+func mapCommand(cfg *config, _ string) error {
 	pokeapiClient := cfg.pokeClient
 
 	res, err := pokeapiClient.ListLocationAreas(cfg.nextLocationAreaUrl)
@@ -24,7 +24,7 @@ func mapCommand(cfg *config) error {
 	return nil
 }
 
-func mapbCommand(cfg *config) error {
+func mapbCommand(cfg *config, _ string) error {
 	pokeapiClient := cfg.pokeClient
 
 	if cfg.previousLocationAreaUrl == nil {
