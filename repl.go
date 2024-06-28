@@ -36,9 +36,24 @@ func getCommands() map[string]cliCommand {
 			mapbCommand,
 		},
 		"explore": {
-			"explore",
+			"explore {location name}",
 			"Lists all the pokemons in the area",
 			exploreCommand,
+		},
+		"catch": {
+			"catch {pokemon name}",
+			"Catches a pokemon",
+			catchCommand,
+		},
+		"inspect": {
+			"inspect {pokemon name}",
+			"Inspect any pokemon that you have cought",
+			inspectCommand,
+		},
+		"pokedex": {
+			"pokedex",
+			"Lists all the pokemons cought",
+			pokedexCommand,
 		},
 	}
 }

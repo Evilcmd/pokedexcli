@@ -17,7 +17,7 @@ func (c *Client) ListLocationAreas(alturl *string) (LocationAreaDefn, error) {
 
 	body, ok := c.cache.Get(fullurl)
 	if ok {
-		fmt.Println("Cache Hit")
+		// fmt.Println("Cache Hit")
 		LocationAreaRes := LocationAreaDefn{}
 		err := json.Unmarshal(body, &LocationAreaRes)
 
@@ -28,7 +28,7 @@ func (c *Client) ListLocationAreas(alturl *string) (LocationAreaDefn, error) {
 		return LocationAreaRes, nil
 	}
 
-	fmt.Println("Cache Miss")
+	// fmt.Println("Cache Miss")
 
 	// creates a request but not sent yet
 	req, err := http.NewRequest("GET", fullurl, nil)

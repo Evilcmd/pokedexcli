@@ -18,7 +18,7 @@ func (c *Client) ListPokemonsInArea(location string) ([]string, error) {
 
 	body, ok := c.cache.Get(fullurl)
 	if ok {
-		fmt.Println("Cache Hit")
+		// fmt.Println("Cache Hit")
 
 		LocationExploreRes := LocationExploreDefn{}
 		err := json.Unmarshal(body, &LocationExploreRes)
@@ -36,7 +36,7 @@ func (c *Client) ListPokemonsInArea(location string) ([]string, error) {
 
 	}
 
-	fmt.Println("Cache Miss")
+	// fmt.Println("Cache Miss")
 
 	req, err := http.NewRequest("GET", fullurl, nil)
 
