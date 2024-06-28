@@ -1,3 +1,3 @@
-module github.com/Evilcmd/pokedexcli
+module github.com/Evilcmd/pokedexclifollow
 
 go 1.22.3
