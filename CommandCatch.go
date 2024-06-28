@@ -30,7 +30,7 @@ func catchCommand(cfg *config, pokemonName string) error {
 	const threshold = 50
 	randNum := rand.Intn(pokemonInfo.BaseExperience)
 	// comment the below line after debug
-	fmt.Println(pokemonInfo.BaseExperience, randNum, threshold)
+	// fmt.Println(pokemonInfo.BaseExperience, randNum, threshold)
 	if randNum < threshold {
 		fmt.Printf("%v was cought\n", pokemonName)
 		cfg.pokemonsCought[pokemonName] = pokemonInfo
